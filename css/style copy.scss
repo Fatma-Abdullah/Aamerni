@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Open Sans, sans-serif;
+    // background-color: #6C0930;
+    // background-image: url(../images/Pattern.png);
+    color: #000;
+}
+
+
+/* ------------banner-------------- */
+.header{
+    background-color: #F1F1F1;
+    .bg-light{
+        background-color: transparent !important;
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-nav .nav-link{
+        color: #000;
+        transition: all ease 0.5s
+    }
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+     color: #126EFF;   
+    }
+    .navbar-light .navbar-brand{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        padding: 0 13px;
+        line-height: 3;
+    }
+    ul.navbar-nav {
+        display: flex;
+        align-items: baseline;
+    }
+    .nav-item .btn-download {
+        background: linear-gradient(0deg, #3a3ab6 0%, #00d4ff 100%);
+        padding: 8px 25px;
+        border-radius: 28px;
+        color: white;
+        width: 130px;
+        border: none;
+    }
+    // background-image:url(../images/Background.png);
+    background-color:'#E4E4E4';
+    background-repeat: no-repeat;
+    height: 682px;
+    width: 100%;
+    color: white;
+    background-size: 100%;
+    .logo{
+        margin-top: 170px;
+    }
+    .phoneImg{
+        height: fit-content;
+    }
+    .store{
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    .store h5{
+        margin-left: 907px
+    }
+  }
+
+/* ------------how it works-------------- */
+.howItWorks{
+padding-top:100px;
+/* margin-top: 256px; */
+}
+.howItWorks img{
+    width: 40%;
+    height: 45%;
+}
+.howItWorks p{
+    font-size: 14px
+}
+.howItWorks .ParaTitle{
+    font-size: 20px;
+}
+/* ------------About Us-------------- */
+.AboutUs{
+    background-image: url(../images/curveImg.png);
+    background-size: cover;
+    margin-top: 50px;
+}
+.AboutUs h1{
+    padding-top: 80px;
+    padding-bottom: 50px
+}
+/* ------------Contact-------------- */
+.contact{
+    background-image: url(../images/supportBg.png);
+    background-size: cover;
+
+}
+.contactForm{
+    margin: 50px;
+    background-color: rgba(73, 0, 36, 0.9);
+    border-radius: 25px;
+
+}
+.contactForm button{
+    color: #490024;
+    font-weight: bold
+}
+.formDiv{
+  
+    border-right: 1px solid #6C0930;
+}
+/* p{
+    word-wrap: break-word; 
+} */
+/* ------------footer-------------- */
+#footer{
+    background-color: #490024;
+    color: white;
+    padding-top: 40px;
+    bottom: 0;
+    width: 100%;
+   
+  }
+  .footer-img{
+    padding: 0 !important;
+    width: 100%;
+    height: 100px;
+  }
+  .logoTxt{
+      font-size: 18px;
+  }
+  .intro{
+      font-size: 13px;
+
+  }
+  hr{
+    background-color: #FFF;
+  }
+  .copyrights{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  #footer .links a{
+      color: #c9b3be;
+      text-decoration:none;
+      display: block;
+  }
+  .subscribeTxt{
+      margin-top:10px;
+    color: #c9b3be;
+    font-size: 14px;
+  }
+  .socialAndStore .social a{
+    margin-right: 20px;
+    padding-bottom: 40px;
+  }
+  img{
+    max-width: 100%; 
+    /* display:block;  */
+    height: auto;
+  }
+  .copyRights{
+      background-color: #330019;
+      text-align: center;
+      margin: auto;
+      line-height: 4;
+      bottom: 0
+  }
+  .copyRights p{
+    margin-bottom: 0 !important;
+  }
+/* ------------------------------------ */
+.w3-container img{
+    text-align: center;
+}
+@media screen and (max-width:1440px) and ( min-width: 1024px) {
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+    .header { height:717px; }
+    .logo img{
+        width: 600px !important;
+    }
+    /* white space */
+    .row {
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+ 
+}
+@media screen and (max-width:768px) and ( min-width: 321px) {
+    .header { height:190px;    margin-bottom: 20px;}
+    .logo { margin-top: 45px; }
+    .logo img{
+        width: 140px
+    }
+}
+@media screen and (max-width:768px) and ( min-width: 320px) {
+    html, body
+    {
+    width: 100%;
+    overflow-x: hidden;
+    }
+     /* white space */
+     .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    .navbar{
+        position: absolute;
+        /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5) !important; */
+        z-index: 1;
+    }
+    .navbar-nav{
+        padding: 10px;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5) !important;
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-nav .nav-link{
+        z-index: 2 !important;
+    }
+
+} 
+@media screen and (min-width:768px){
+    .logo img{
+        width: 180px
+    }
+}
+@media screen and (max-width: 425px){
+    .logo { margin-top: 50px;}
+
+    .header { height: 215px; }
+    .row .info{
+        margin-bottom: 45px !important;
+    }
+    .logo img{
+        width: 180px
+    }
+    .contactForm .col-sm-6{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    }
+@media screen and (max-width: 320px){
+    .howItWorks, .AboutUs, .contact, #footer{
+        padding: 10px;
+        padding-top: 30px
+    }
+    .logo { margin-top: 32px;}
+
+    .header { height: 170px; }
+    .row .info{
+        margin-bottom: 45px !important
+    }
+    .logo img{
+        width: 150px
+    }
+    
+    }
+
+
+ 
+ 
+    
