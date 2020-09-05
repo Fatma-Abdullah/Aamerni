@@ -236,7 +236,7 @@ p.para {
   justify-content: center;
 }
 .help .contact .fas {
-  color: #80e3ff;
+  color: #218eff;
   font-size: 15px;
 }
 .help .contact .item {
@@ -507,7 +507,7 @@ body {
   margin: 0 !important;
   width: 100%;
 }
-.row.linksDiv .col-12.col-md-3 {
+.row.linksDiv .col-12.col-md-3, .row.linksDiv .col-12.col-md-2 {
   text-align: center;
 }
 
