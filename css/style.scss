@@ -235,11 +235,12 @@ p.para {
     .row {
       display: flex;
       justify-content: center;
+      align-items:center
     }
     text-align: left;
     .fas {
       color: #218eff;
-      font-size: 15px;
+      font-size: 37px;
     }
     .item {
       margin: 1em 0 !important;
@@ -317,11 +318,17 @@ p.para {
   padding: 21em 0;
   background-repeat: no-repeat;
   background-size: cover;
-  .storeDiv {
-    margin: 1em 0px;
-  }
+  // .storeDiv {
+  //   .download .storeDiv {
+  //     padding: 0;
+  //     margin: 1em 15px 1em 0;
+  // }
+  // }
 }
-
+.col-12.col-md-6.storeDiv {
+  padding: 5px;
+  padding-left: 0;
+}
 .footer {
   background-image: url("../images/footerBg.png");
   background-repeat: no-repeat;
@@ -398,6 +405,7 @@ p.para {
   .withBg {
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 3em 0;
   }
   .services .col-md-2 {
     max-width: 100%;
@@ -415,10 +423,13 @@ p.para {
     color: #222a41;
     letter-spacing: 0px;
   }
-  .HowItWorks {
+  .HowItWorks  {
     background-color: #fff;
     margin: 1em;
     padding: 20px;
+    .col-12.col-sm-4 {
+      padding: 0;
+  }
   }
   .lessBold {
     font-size: 28px;
@@ -479,12 +490,27 @@ p.para {
   }
   .HowItWorks {
     bottom: 9em;
-  }
+  } .titleBoldnoLine {
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #222a41;
+}
+.downloadTxt {
+  text-align: left;
+  padding: 0;
+}
+p.para {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
 }
 @media screen and (max-width: 768px) and (min-width: 321px) {
   .services .item {
     background-size: cover;
   }
+ 
 }
 @media screen and (min-width: 768px) {
   .logo img {
@@ -529,8 +555,12 @@ p.para {
   }
 }
 .downloadTxt {
-  text-align: center;
-  padding: 0 4em 0 0;
+  text-align: left;
+  // padding: 0 4em 0 0;
+}
+p.para {
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 
 .row.linksDiv{
@@ -540,4 +570,17 @@ p.para {
     .col-12.col-md-3, .col-12.col-md-2{
 text-align: center;
     }
+
+    .download .storeDiv {
+      padding: 0 ;
+      margin: 1em 0;
+  }
+}
+i.fa {
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+}
+.HowItWorks .col-12.col-sm-4 {
+  padding: 0;
 }
