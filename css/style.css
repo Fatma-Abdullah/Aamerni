@@ -259,9 +259,6 @@ p.para {
 .countries {
   margin-top: 8em;
 }
-.countries .country {
-  margin: 4em 0 !important;
-}
 .countries .country img {
   margin: 1em;
 }
@@ -308,8 +305,10 @@ p.para {
 /* --------------download--------------------- */
 .download {
   margin: 4em 0;
+}
+.download .mobileBg {
   background-image: url(../images/download.png);
-  padding: 21em 0;
+  padding: 21em 0 21em 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -383,6 +382,13 @@ body {
   .row {
     max-width: 1140px;
     margin: 0 auto;
+  }
+
+  .mobileBg {
+    background-image: url("../images/download.png");
+    padding: 21em 0 0 0 !important;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .withBg {
@@ -467,7 +473,6 @@ body {
 
   .download {
     margin: 4em 0;
-    background-image: url(../images/download.png);
     padding: 3px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -479,7 +484,6 @@ body {
   }
 
   .countries .country {
-    margin: 4em 0 !important;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -497,7 +501,10 @@ body {
   }
 
   .downloadTxt {
-    text-align: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-Content: center;
     padding: 0;
   }
 
@@ -522,7 +529,10 @@ body {
   }
 }
 .downloadTxt {
-  text-align: left;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p.para {
@@ -551,6 +561,14 @@ i.fa {
 
 .HowItWorks .col-12.col-sm-4 {
   padding: 0;
+}
+
+.country .col-12.col-sm-3 {
+  margin-top: 15px;
+}
+
+.services .col-12.col-md-2 {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
